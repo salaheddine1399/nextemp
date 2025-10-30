@@ -7,7 +7,10 @@ import Link from "next/link";
 import { useRef } from "react";
 import { HireMe2 } from "@/components/HireMe2";
 
-import proj1 from "../../public/images/projects/clay-theme.png";
+import proj1 from "../../public/images/projects/pharmintex.png";
+import proj2 from "../../public/images/projects/nextauth.png";
+import proj3 from "../../public/images/projects/parfum.png";
+
 import loading from "../../public/images/articles/GTA6-VICE.gif";
 
 import TransitionEffect from "@/components/TransitionEffect";
@@ -231,10 +234,10 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects | By NexTemp</title>
+        <title>Projects | By Salah eddine</title>
         <meta
           name="description"
-          content="NexTemp, A open-source portfolio theme built with Nextjs"
+          content="Portfolio with Nextjs"
         />
       </Head>
 
@@ -251,34 +254,34 @@ export default function Projects() {
             <div className="col-span-12">
               <FeaturedProject
                 type="Design & Development"
-                tools="HTML | CSS | JavaScript | Gatsby"
-                title="Clay - Gatsby Theme"
-                summary="Image-centric Gatsby theme for publishers, portfolio, photographers blogs and more."
+                tools="NextJS | Supabase | TailwindCSS | Figma | NextAuth"
+                title="Pharmintex "
+                summary="The platform is an Algerian digital solution dedicated to analyzing medical prescriptions."
                 img={proj1}
                 date="2023"
-                link="/projects/clay-gatsby-theme"
-                github="https://travislord.xyz/projects/clay-gatsby-theme"
+                link="/projects/pharmintex"
+                github="https://www.linkedin.com/posts/salah-eddine-khachouche-733a231b3_nextjs-supabase-nextauth-activity-7350435299497254913-m-In?utm_source=share&utm_medium=member_desktop&rcm=ACoAADHOolcB3QuhvdXi0VUHTmoR_Bw0wa75jlE"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Design & Development"
-                tools="HTML | CSS | JavaScript | Gatsby"
-                title="Clay - Gatsby Theme"
-                img={proj1}
+                tools="NextJS "
+                title="NextAuth"
+                img={proj2}
                 date="2023"
-                link="/projects/clay-gatsby-theme"
-                github="https://travislord.xyz/projects/clay-gatsby-theme"
+                link="/projects/nextauth"
+                github="https://www.linkedin.com/posts/salah-eddine-khachouche-733a231b3_nextjs-webdevelopment-authentication-activity-7295439889670557696-0-6A?utm_source=share&utm_medium=member_desktop&rcm=ACoAADHOolcB3QuhvdXi0VUHTmoR_Bw0wa75jlE"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Design & Development"
-                tools="HTML | CSS | JavaScript | Gatsby"
-                title="Clay - Gatsby Theme"
-                img={proj1}
+                type="Development"
+                tools="WordPress | PHP | CSS | JavaScript"
+                title="Mon Parfum Kiffan"
+                img={proj3}
                 date="2023"
-                link="/projects/clay-gatsby-theme"
+                link="/projects/mon-parfum-kiffan"
                 github="https://travislord.xyz/projects/clay-gatsby-theme"
               />
             </div>
@@ -296,17 +299,7 @@ export default function Projects() {
             </ul>
 
             <div className="mt-2 flex items-center justify-between gap-3 grid-cols-2">
-              <Link
-                href="/articles/"
-                target={"_self"}
-                className={`flex items-center rounded-lg border-2 border-solid bg-light p-2.5 px-6 text-lg font-semibold
-            capitalize text-dark hover:border-light hover:bg-dark hover:text-light 
-            dark:bg-dark dark:text-light dark:hover:bg-light dark:hover:text-dark
-            md:p-2 md:px-4 md:text-base
-             `}
-              >
-                View Articles
-              </Link>
+
               <Link
                 href="/about/"
                 target={"_self"}

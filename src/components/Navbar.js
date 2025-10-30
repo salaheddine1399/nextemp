@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import Logo from "./Logo";
+
 import { useRouter } from "next/router";
 import {
   MediumIcon,
@@ -110,7 +110,7 @@ const Navbar = () => {
           <CustomLink className="mr-4" href="/" title="Home" />
           <CustomLink className="mx-4" href="/about" title="About" />
           <CustomLink className="mx-4" href="/projects" title="Projects" />
-          <CustomLink className="ml-4" href="/articles" title="Articles" />
+          
         </nav>
         <nav
           className="flex items-center justify-center flex-wrap lg:mt-2
@@ -119,7 +119,7 @@ const Navbar = () => {
           <motion.a
             target={"_blank"}
             className="w-7 mr-3"
-            href="https://github.com/lilxyzz"
+            href="https://github.com/salaheddine1399"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="Checkout my GitHub profile"
@@ -127,36 +127,20 @@ const Navbar = () => {
             <GithubIcon />
           </motion.a>
 
-          <motion.a
-            target={"_blank"}
-            className="w-7 mx-3 bg-light rounded-full"
-            href="https://medium.com/@travis.lord"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="Checkout my Medium profile"
-          >
-            <MediumIcon />
-          </motion.a>
+          
 
           <motion.a
             target={"_blank"}
             className="w-7 mx-3"
-            href="https://dev.to/lilxyzz"
+            href="https://www.linkedin.com/in/salah-eddine-khachouche-733a231b3"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="Checkout my Dev.to profile"
           >
-            <DevIcon />
+            <LinkedInIcon />
           </motion.a>
 
-          <motion.a
-            target={"_blank"}
-            className="w-7 mx-3"
-            href="https://dev.to/lilxyzz"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="My Dev.to profile"
-          ></motion.a>
+          
 
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -201,12 +185,7 @@ const Navbar = () => {
               href="/projects"
               title="Projects"
             />
-            <CustomMobileLink
-              toggle={handleClick}
-              className="ml-4 lg:m-0 lg:my-2"
-              href="/articles"
-              title="Articles"
-            />
+            
             <CustomMobileLink
               toggle={handleClick}
               className="ml-4 lg:m-0 lg:my-2"
@@ -275,9 +254,7 @@ const Navbar = () => {
         </motion.div>
       ) : null}
 
-      <div className="absolute left-[50%] top-2 translate-x-[-50%] ">
-        <Logo />
-      </div>
+
     </header>
   );
 };

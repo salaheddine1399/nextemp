@@ -58,21 +58,83 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Developer"
-            company="Stellar Innovations"
-            time="2020 - 2024"
-            address="200 Innovations st"
-            companyLink="https://github.com/lilxyzz/clay-theme"
-            work="At Stellar Innovations, I serve as a web developer, where I play a crucial role in designing and implementing cutting-edge web solutions. My responsibilities include developing responsive and high-performance websites and applications using technologies such as HTML, CSS, JavaScript, React, and Node.js. I collaborate closely with cross-functional teams to ensure our projects meet the highest standards of functionality and user experience. One of my key achievements at Stellar Innovations has been leading the development of a comprehensive e-commerce platform that significantly enhanced our client's online presence and sales. My work is driven by a passion for continuous learning and innovation, always striving to push the boundaries of what's possible in web development."
+            position="Full Stack Developer"
+            company="Algerie Poste"
+            time="08-2025 - Now"
+            address="Bab ezzouar, Algerie"
+            companyLink="https://www.poste.dz"
+             work={
+    <>
+      <p>
+        At <strong>Algérie Poste</strong>, I contribute to building internal tools aimed at improving 
+        development efficiency and standardizing project workflows.
+      </p>
+      <p className="mt-2">
+        I developed a <strong>CRUD-based starter project</strong> integrated with the main system, 
+        enabling developers to <strong>launch new applications faster</strong> using a consistent and scalable setup.
+      </p>
+      <p className="mt-2">
+        I also created a <strong>planning management web app</strong> for post office employees, featuring 
+        <strong> SSO authentication</strong> with Algérie Poste’s internal system for secure and unified access.
+      </p>
+      <p className="mt-2">
+        These projects strengthened my expertise in <strong>Laravel</strong>, <strong>system architecture</strong>, 
+        and <strong>SSO integration</strong>, while supporting Algérie Poste’s <strong>digital transformation</strong>.
+      </p>
+    </>
+  }
           />
 
           <Details
-            position="Rad Tester"
-            company="Vault Technologies"
-            time="2018 - 2020"
-            address="404 Tech st"
-            companyLink="https://github.com/lilxyzz/holo-theme"
-            work="At Vault Technologies, I worked as a RAD (Rapid Application Development) Tester, where I was responsible for ensuring the quality and functionality of our software applications during the development process. My role involved designing and executing test plans, identifying and documenting bugs, and working closely with developers to resolve issues quickly. This position required a deep understanding of the software development lifecycle and a keen eye for detail to ensure our applications met the highest standards of performance and reliability. My contributions at Vault Technologies helped streamline our development processes and significantly improved the overall quality of our software products."
+            position="Full Stack Developer"
+            company="Goupe Transtev"
+            time="10-2024 - 08-2025"
+            address="Belouizdad, Algerie"
+            companyLink="https://dnk-dz.com"
+              work={
+    <>
+      <p>
+        Developed and customized <strong>ERP modules</strong> using <strong>PHP</strong> and <strong>CodeIgniter</strong>, 
+        tailored to client requirements. Collaborated with stakeholders to analyze business needs and deliver scalable, 
+        high-performance solutions.
+      </p>
+      <p className="mt-2">
+        Designed and implemented a <strong>mobile-friendly web app</strong> for <strong>QR code scanning</strong>, 
+        allowing drivers to record bus <strong>entry and exit times</strong>, integrated with an 
+        <strong> administration dashboard</strong> for real-time monitoring and management. Handled testing, deployment, 
+        and optimization to ensure <strong>security</strong>, <strong>reliability</strong>, and <strong>operational efficiency</strong>.
+      </p>
+    </>
+  }
+
+          />
+          <Details
+            position="Developer Intern"
+            company="Renault Algerie"
+            time="02-2024 - 07-2024"
+            address="Oued Smar, Algerie"
+            companyLink="https://www.renault.dz"
+              work={
+    <>
+      <p>
+        During my internship at <strong>Renault Group</strong>, I designed and developed an 
+        <strong> innovative web platform</strong> for spare parts distribution. The project featured an 
+        <strong> advanced recommendation system</strong> to enhance user experience and optimize logistics.
+      </p>
+      <p className="mt-2">
+        I worked on <strong>front-end development</strong> using <strong>React.js</strong>, integrated 
+        <strong> secure authentication</strong> with <strong>Okta</strong>, and contributed to building the 
+        <strong> recommendation algorithm</strong>. I also participated in <strong>requirement analysis</strong>, 
+        <strong> testing</strong>, and <strong>system validation</strong> to ensure platform reliability.
+      </p>
+      <p className="mt-2">
+        This experience strengthened my skills in <strong>web development</strong>, 
+        <strong> system integration</strong>, and <strong>user-centered design</strong>, 
+        while giving me valuable insight into <strong>collaborative, enterprise-level projects</strong>.
+      </p>
+    </>
+  }
+
           />
         </ul>
       </div>
@@ -87,17 +149,6 @@ const Experience = () => {
              `}
         >
           View Projects
-        </Link>
-        <Link
-          href="/articles/"
-          target={"_self"}
-          className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
-            capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
-            dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
-            md:p-2 md:px-4 md:text-base
-             `}
-        >
-          View Articles
         </Link>
       </div>
     </div>
