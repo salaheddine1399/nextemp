@@ -70,7 +70,7 @@ export default function About() {
                 School management app with Next.js  Admin, teacher, student, and parent dashboards.
               </h2>
               <h3 className="mb-4 text-lg font-bold  text-lightGreen dark:text-primaryDark">
-                Web Design | UX/UI | Development
+                Development
               </h3>
               <div classNname="w-full border-2 border-solid border-light bg-light"></div>
               <p className="">
