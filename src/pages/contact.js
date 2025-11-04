@@ -89,6 +89,17 @@ I'm One Message Away 👋"
                 want to say hello, I'll try my best to get back to you! Feel
                 free to message me about any relevant project updates.
               </p>
+
+              <div className="mt-4">
+                <h3 className="text-lg font-semibold mb-2 text-dark dark:text-light">Connect with me:</h3>
+                <div className="flex space-x-4">
+                  <a href="https://wa.me/213659179731" className="inline-block"><img src="/images/svgs/whatsapp.svg" alt="WhatsApp" className="w-6 h-6" /></a>
+                  <a href="https://t.me/salaheddine13" className="inline-block"><img src="/images/svgs/telegram.svg" alt="Telegram" className="w-6 h-6" /></a>
+                  <a href="https://www.linkedin.com/in/salah-eddine-khachouche-733a231b3" className="inline-block">
+                    <img src="/images/svgs/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="relative col-span-4 h-max xl:col-span-4 md:col-span-8 md:order-2">
               <div className="grid w-full grid-cols-2 sm:gap-6 relative flex w-full flex-col items-center justify-center rounded-2xl rounded-br-2xl border  border-solid  border-dark bg-light p-6   dark:border-light dark:bg-dark xs:p-4">
@@ -166,7 +177,9 @@ I'm One Message Away 👋"
                 </div>
               </div>
             </div>
+            
           </div>
+          
         </Layout>
       </main>
     </>
