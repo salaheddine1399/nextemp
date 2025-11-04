@@ -18,40 +18,50 @@ export default function About() {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  const myForm = e.target;
+  const formData = new FormData(myForm);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const myForm = e.target;
-    const formData = new FormData(myForm);
-    try {
-      const response = await fetch("/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams(formData).toString(),
-      });
+  const payload = Object.fromEntries(formData.entries());
+  // optional: remove honeypot if present
+  delete payload['bot-field'];
 
-      if (response.ok) {
-        // Handle success, e.g., redirect to a thank you page
-        router.push("/thanks");
-      } else {
-        // Handle error
-        console.error("Form submission failed!", response);
-      }
-    } catch (error) {
-      // Handle error
-      console.error("An error occurred during form submission:", error);
+  try {
+    const response = await fetch("https://formspree.io/f/mrboyrvj", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    const data = await response.json();
+    console.log("status", response.status, "json:", data);
+
+    if (response.ok) {
+      router.push("/thanks");
+    } else {
+      console.error("Formspree error:", data);
+      alert(data.error || "Submission failed. Check console.");
     }
-  };
+  } catch (err) {
+    console.error("Network error:", err);
+    alert("Network error. See console.");
+  }
+};
+
+
+
 
   return (
     <>
       <Head>
-        <title>Portfolio website built with NextJs</title>
+        <title>Contact</title>
         <meta
           name="description"
-          content="Portfolio website built with Nextjs"
+          content="portfolio with Nextjs"
         />
       </Head>
 
