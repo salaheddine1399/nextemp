@@ -10,6 +10,7 @@ import { HireMe2 } from "@/components/HireMe2";
 import proj1 from "../../public/images/projects/pharmintex.png";
 import proj2 from "../../public/images/projects/nextauth.png";
 import proj3 from "../../public/images/projects/parfum.png";
+import proj4 from "../../public/images/projects/school.png";
 
 import loading from "../../public/images/articles/GTA6-VICE.gif";
 
@@ -265,13 +266,13 @@ export default function Projects() {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Design & Development"
-                tools="NextJS "
-                title="NextAuth"
-                img={proj2}
+                type="Development"
+                tools="NextJS | TailwindCSS | TypeScript"
+                title="School Management Dashboard"
+                img={proj4}
                 date="2023"
-                link="/projects/nextauth"
-                github="https://www.linkedin.com/posts/salah-eddine-khachouche-733a231b3_nextjs-webdevelopment-authentication-activity-7295439889670557696-0-6A?utm_source=share&utm_medium=member_desktop&rcm=ACoAADHOolcB3QuhvdXi0VUHTmoR_Bw0wa75jlE"
+                link="/projects/school_management_dashboard"
+                github=""
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -283,6 +284,18 @@ export default function Projects() {
                 date="2023"
                 link="/projects/mon-parfum-kiffan"
                 github="https://travislord.xyz/projects/clay-gatsby-theme"
+              />
+            </div>
+
+                        <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Design & Development"
+                tools="NextJS "
+                title="NextAuth"
+                img={proj2}
+                date="2023"
+                link="/projects/nextauth"
+                github="https://www.linkedin.com/posts/salah-eddine-khachouche-733a231b3_nextjs-webdevelopment-authentication-activity-7295439889670557696-0-6A?utm_source=share&utm_medium=member_desktop&rcm=ACoAADHOolcB3QuhvdXi0VUHTmoR_Bw0wa75jlE"
               />
             </div>
           </div>
